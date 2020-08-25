@@ -1,0 +1,70 @@
+html,
+body {
+	height: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h2, h3
+{
+	color: #40424a;
+	margin: 0;
+	font-weight: 600;
+}
+
+img {
+  border-radius: 50%;
+}
+
+p {
+	font-size: 18px;
+	color: #808181;
+	line-height: 1.8;
+}
+
+.header-section {
+	padding: 10px 20px;
+	background: #f2f7f8;
+}
+
+.profile-info h2 {
+	margin-bottom: 30px;
+}
+
+.profile-info ul li {
+	font-size: 24px;
+	color: #808181;
+	margin-bottom: 15px;
+}
+
+.float-container {
+    padding: 15px;
+    margin: auto;
+  	width: 90%;
+}
+
+.float-child {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+.myheader {
+	text-align: center;
+}
+
+#map {
+	width: 600px;
+	height: 350px;
+}
+
+#overlay {
+	background-color: red; 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 10px;
+}
+
+
+
+
+

@@ -1,0 +1,24 @@
+{
+  "name": "strayos_angular",
+  "version": "1.0.0",
+  "description": "Project for Strayos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "parcel index.html",
+    "build": "parcel build --public-url . index.html"
+  },
+  "author": "Aman",
+  "license": "ISC",
+  "dependencies": {
+    "ol": "^6.4.3"
+  },
+  "name": "xyz",
+  "dependencies": {
+    "ol": "6.4.3"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel": "1.11.0"
+  }
+}

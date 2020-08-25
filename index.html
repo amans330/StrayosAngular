@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Strayos User Profile</title>
+	<meta charset="UTF-8">
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="./css/style.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+	<header class="header-section">
+		<div class="myheader">
+			<h2>My Profile</h2>
+		</div>
+	</header>
+
+	
+	<div id="div1" class="float-container" ng-app="myApp" ng-controller="myCtrl">
+		<div class="float-child">
+			<div class="profile-info">
+				 <img ng-src="{{ profileData.avatarUrl }}" alt="Avatar"> 
+			</div>
+			<div class="profile-info">
+				<h2>My Details</h2>	
+				<h4>Full Name</h4>
+				<p> {{ profileData.firstName + ' ' + profileData.lastName }} </p>
+			</div>
+			<div class="profile-info">
+				<h4>Email</h4>
+				<p> {{ profileData.email }} </p>
+			</div>
+			<div class="profile-info">
+				<h4>Mobile</h4>
+				<p> {{ profileData.phone }} </p>
+			</div>
+			<div class="profile-info">
+				<h4>Address</h4>
+				<p> {{ address.building + ' ' + address.street + ', ' + address.street_suffix + ', ' + address.city + ', ' + address.state + ' - PIN: ' + address.zipCode}} </p>
+			</div>
+		</div>
+		<div class="float-child">
+			<div class="profile-info">
+				<h4>A little about me</h4>
+				<p> {{ profileData.bio }} </p>
+			</div>
+			<div class="profile-info">
+				<h4>I live here</h4>
+				<div id="map"></div>
+				<div id="overlay"></div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<script src="./index.js"></script>
+</html>
